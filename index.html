@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Lombok | Airport Transfer & Private Car Lombok - Lombok Ride</title>
+    <meta name="description" content="Booking transport Lombok, airport transfer, private car dengan driver ke Mataram, Senggigi, Bangsal, Senaru, Sembalun, Kuta, Mandalika, Pink Beach dan seluruh Lombok.">
+    <meta name="keywords" content="transport lombok, airport transfer lombok, private car lombok, sewa mobil lombok dengan driver, driver lombok, transport bandara lombok, airport transfer kuta lombok">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#059669', // Emerald 600
+                        'primary-dark': '#047857', // Emerald 700
+                        secondary: '#0891b2', // Cyan 600
+                        accent: '#f97316', // Orange 500
+                        'accent-dark': '#ea580c', // Orange 600
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'float': '0 10px 30px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Styles & Utilities */
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Hero Background with Overlay */
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.6)), url('https://images.unsplash.com/photo-1570789714781-a67b45781604?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide-up {
+            animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Swap Button Animation */
+        .swap-spin {
+            animation: spin 0.3s ease-in-out;
+        }
+        @keyframes spin {
+            100% { transform: rotate(180deg); }
+        }
+
+        /* Hide elements dynamically */
+        .hidden-calc { display: none; }
+        .show-calc { display: block; animation: slideUp 0.3s ease-out; }
+        
+        /* Mobile padding adjustment for sticky bar */
+        @media (max-width: 768px) {
+            body { padding-bottom: 70px; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white shadow-lg shadow-primary/30">
+                        <i class="fa-solid fa-route text-xl"></i>
+                    </div>
+                    <a href="#" class="font-bold text-2xl tracking-tight text-slate-900">
+                        LOMBOK<span class="text-primary">RIDE</span>
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-slate-600 hover:text-primary font-medium transition-colors">Home</a>
+                    <a href="#services" class="text-slate-600 hover:text-primary font-medium transition-colors">Layanan</a>
+                    <a href="#destinations" class="text-slate-600 hover:text-primary font-medium transition-colors">Destinasi</a>
+                    <a href="#vehicles" class="text-slate-600 hover:text-primary font-medium transition-colors">Armada</a>
+                    <a href="#faq" class="text-slate-600 hover:text-primary font-medium transition-colors">FAQ</a>
+                </nav>
+                <div class="hidden md:flex">
+                    <a href="#booking-section" class="bg-accent hover:bg-accent-dark text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5">
+                        <i class="fa-solid fa-car-side mr-2"></i> Booking
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-600 hover:text-primary p-2" aria-label="Menu">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative pt-28 pb-32 lg:pt-40 lg:pb-48 hero-bg min-h-[90vh] flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Hero Text -->
+            <div class="text-center lg:text-left slide-up">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white mb-6 text-sm font-medium border border-white/30">
+                    <i class="fa-solid fa-check-circle text-accent"></i> Partner Perjalanan Terbaik Anda
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+                    Jelajahi Lombok <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Dengan Nyaman</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-200 mb-8 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                    Private transport, airport transfer & perjalanan wisata dengan driver profesional di seluruh penjuru Lombok.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
+                    <a href="#booking-section" class="bg-accent hover:bg-accent-dark text-white px-8 py-3.5 rounded-full font-bold transition-all duration-300 shadow-lg hover:shadow-accent/50 text-center flex items-center justify-center gap-2 hover:-translate-y-1">
+                        Booking Sekarang
+                    </a>
+                    <button onclick="openDirectWhatsApp()" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 text-center flex items-center justify-center gap-2 hover:-translate-y-1">
+                        <i class="fa-brands fa-whatsapp text-green-400 text-xl"></i> Chat WhatsApp
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-left text-white/90 text-sm">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-id-card text-emerald-400"></i> Driver Lokal</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-tag text-emerald-400"></i> Harga Transparan</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-hotel text-emerald-400"></i> Antar-Jemput</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-map-location-dot text-emerald-400"></i> Seluruh Lombok</div>
+                </div>
+            </div>
+
+            <div id="booking-section" class="bg-white p-6 md:p-8 rounded-3xl shadow-float slide-up border border-slate-100 relative">
+                <div class="absolute -top-4 -right-4 bg-accent text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transform rotate-12">
+                    <i class="fa-solid fa-calculator text-xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800 mb-1">Hitung Harga Perjalanan</h2>
+                <p class="text-slate-500 text-sm mb-6">Dapatkan estimasi instan untuk rute Anda.</p>
+                
+                <form id="bookingForm" class="space-y-5" onsubmit="event.preventDefault(); submitBooking();">
+                    
+                    <!-- Location Inputs with Swap -->
+                    <div class="relative space-y-4 bg-slate-50 p-4 rounded-2xl border border-slate-200">
+                        <!-- Origin -->
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1">Lokasi Jemput</label>
+                            <div class="relative">
+                                <i class="fa-solid fa-location-dot absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-400"></i>
+                                <select id="origin" required class="w-full pl-10 pr-4 py-3 bg-white border border-slate-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary appearance-none outline-none transition-all cursor-pointer text-slate-700 font-medium text-sm lg:text-base">
+                                    <option value="" disabled selected>Pilih lokasi penjemputan...</option>
+                                    <!-- Options injected via JS -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Swap Button -->
+                        <button type="button" onclick="swapLocations()" class="absolute right-8 top-1/2 transform -translate-y-1/2 bg-white border border-slate-200 w-10 h-10 rounded-full shadow-sm flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors z-10" aria-label="Tukar Lokasi">
+                            <i class="fa-solid fa-right-left rotate-90" id="swapIcon"></i>
+                        </button>
+
+                        <!-- Destination -->
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1">Tujuan</label>
+                            <div class="relative">
+                                <i class="fa-solid fa-location-crosshairs absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-400"></i>
+                                <select id="destination" required class="w-full pl-10 pr-4 py-3 bg-white border border-slate-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary appearance-none outline-none transition-all cursor-pointer text-slate-700 font-medium text-sm lg:text-base">
+                                    <option value="" disabled selected>Pilih lokasi tujuan...</option>
+                                    <!-- Options injected via JS -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Date & Time -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1">Tanggal</label>
+                            <input type="date" id="date" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none text-slate-700 text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1">Jam</label>
+                            <input type="time" id="time" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none text-slate-700 text-sm">
+                        </div>
+                    </div>
+
+                    <!-- Passengers & Vehicle -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1">Penumpang</label>
+                            <select id="passengers" onchange="recommendVehicle()" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none text-slate-700 text-sm">
+                                <option value="1">1 Orang</option>
+                                <option value="2" selected>2 Orang</option>
+                                <option value="3">3 Orang</option>
+                                <option value="4">4 Orang</option>
+                                <option value="5">5 Orang</option>
+                                <option value="6">6 Orang</option>
+                                <option value="7">7+ Orang (Van)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1">Kendaraan</label>
+                            <select id="vehicle" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none text-slate-700 text-sm">
+                                <option value="economy">Economy Car</option>
+                                <option value="family" selected>Family Car</option>
+                                <option value="premium">Premium Car</option>
+                                <option value="van">Van / Minibus</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Info (Hidden initially) -->
+                    <div id="extraDetails" class="space-y-4 hidden-calc">
+                        <div>
+                            <input type="text" id="customerName" placeholder="Nama Lengkap" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary outline-none text-sm">
+                        </div>
+                        <div>
+                            <input type="text" id="hotelName" placeholder="Nama Hotel / Villa / Nomor Penerbangan" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary outline-none text-sm">
+                        </div>
+                    </div>
+
+                    <!-- Calculation Result Card -->
+                    <div id="calcResult" class="hidden-calc bg-emerald-50 rounded-xl p-4 border border-emerald-100 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-emerald-100 rounded-bl-full -z-0 opacity-50"></div>
+                        <div class="relative z-10 flex justify-between items-end">
+                            <div>
+                                <p class="text-xs font-semibold text-emerald-800 uppercase tracking-wider mb-1">Estimasi Harga</p>
+                                <p id="priceResult" class="text-2xl font-bold text-emerald-700">Rp 0</p>
+                                <div class="flex items-center gap-3 mt-1 text-xs text-emerald-600 font-medium">
+                                    <span id="distanceResult"><i class="fa-solid fa-route"></i> 0 km</span>
+                                    <span id="durationResult"><i class="fa-solid fa-clock"></i> 0 menit</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="errorState" class="hidden-calc bg-amber-50 rounded-xl p-4 border border-amber-200 text-amber-800 text-sm flex items-start gap-3">
+                        <i class="fa-solid fa-circle-info mt-0.5"></i>
+                        <p id="errorMsg"></p>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <button type="submit" id="submitBtn" class="w-full bg-slate-900 hover:bg-slate-800 text-white py-4 rounded-xl font-bold text-lg transition-colors flex items-center justify-center gap-2 shadow-md hidden-calc">
+                        <i class="fa-brands fa-whatsapp text-xl text-green-400"></i> Lanjut via WhatsApp
+                    </button>
+                    
+                    <button type="button" id="checkPriceBtn" onclick="calculate()" class="w-full bg-primary hover:bg-primary-dark text-white py-4 rounded-xl font-bold text-lg transition-colors flex items-center justify-center shadow-md">
+                        Cek Harga
+                    </button>
+                    
+                    <p class="text-center text-xs text-slate-400 mt-2"><i class="fa-solid fa-lock"></i> Harga transparan. Konfirmasi via WhatsApp.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white" id="services">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Layanan Utama Kami</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-soft transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-primary text-2xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-plane-arrival"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Airport Transfer</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Penjemputan dan pengantaran tepat waktu dari dan menuju Bandara Internasional Lombok.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-soft transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-primary text-2xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hotel"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Hotel Transfer</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Antar jemput aman dan nyaman menuju hotel, villa, resort, atau homestay Anda.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-soft transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-primary text-2xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Private Trip</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Transportasi private seharian penuh untuk menjelajahi keindahan destinasi wisata Lombok.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-soft transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-primary text-2xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-location-arrow"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Point to Point</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Antar jemput sekali jalan dari satu lokasi ke lokasi lainnya dengan tarif terjangkau.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-50" id="destinations">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-800 mb-3">Ke Mana Pun di Lombok</h2>
+                    <p class="text-slate-500 max-w-2xl">Pilih destinasi Anda dan kami siap mengantar dengan aman. Klik untuk mengisi form otomatis.</p>
+                </div>
+                <button onclick="scrollToTop()" class="text-primary font-semibold hover:text-primary-dark transition-colors flex items-center gap-1 hidden md:flex">
+                    Lihat Semua <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                <!-- Dest Cards injected via JS to ensure logic matches -->
+                <div class="dest-grid-container contents" id="destGrid"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white" id="vehicles">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Pilihan Armada</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
+                <p class="text-slate-500 max-w-2xl mx-auto">Kendaraan terawat, bersih, AC dingin, dan siap melayani perjalanan Anda.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Vehicle 1 -->
+                <div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-soft hover:shadow-float transition-all duration-300 relative overflow-hidden group text-center">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-emerald-400"></div>
+                    <i class="fa-solid fa-car text-5xl text-slate-300 group-hover:text-primary transition-colors mb-4 block mt-4"></i>
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">Economy Car</h3>
+                    <p class="text-sm text-slate-500 mb-4">Agya, Brio, Ayla</p>
+                    <div class="flex justify-center gap-4 text-xs font-semibold text-slate-600 bg-slate-50 py-2 rounded-lg">
+                        <span><i class="fa-solid fa-user-group text-primary"></i> 1-4 Pax</span>
+                        <span><i class="fa-solid fa-suitcase text-primary"></i> 2 Koper</span>
+                    </div>
+                </div>
+                <!-- Vehicle 2 -->
+                <div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-soft hover:shadow-float transition-all duration-300 relative overflow-hidden group text-center">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-cyan-400"></div>
+                    <i class="fa-solid fa-car-side text-5xl text-slate-300 group-hover:text-secondary transition-colors mb-4 block mt-4"></i>
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">Family Car</h3>
+                    <p class="text-sm text-slate-500 mb-4">Avanza, Xenia, Ertiga</p>
+                    <div class="flex justify-center gap-4 text-xs font-semibold text-slate-600 bg-slate-50 py-2 rounded-lg">
+                        <span><i class="fa-solid fa-user-group text-secondary"></i> 1-6 Pax</span>
+                        <span><i class="fa-solid fa-suitcase text-secondary"></i> 4 Koper</span>
+                    </div>
+                </div>
+                <!-- Vehicle 3 -->
+                <div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-soft hover:shadow-float transition-all duration-300 relative overflow-hidden group text-center">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-indigo-400"></div>
+                    <i class="fa-solid fa-car-rear text-5xl text-slate-300 group-hover:text-indigo-500 transition-colors mb-4 block mt-4"></i>
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">Premium Car</h3>
+                    <p class="text-sm text-slate-500 mb-4">Innova Reborn / Zenix</p>
+                    <div class="flex justify-center gap-4 text-xs font-semibold text-slate-600 bg-slate-50 py-2 rounded-lg">
+                        <span><i class="fa-solid fa-user-group text-indigo-500"></i> 1-5 Pax</span>
+                        <span><i class="fa-solid fa-suitcase text-indigo-500"></i> 5 Koper</span>
+                    </div>
+                </div>
+                <!-- Vehicle 4 -->
+                <div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-soft hover:shadow-float transition-all duration-300 relative overflow-hidden group text-center">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-accent"></div>
+                    <i class="fa-solid fa-van-shuttle text-5xl text-slate-300 group-hover:text-accent transition-colors mb-4 block mt-4"></i>
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">Van / Minibus</h3>
+                    <p class="text-sm text-slate-500 mb-4">Hiace Commuter / Premio</p>
+                    <div class="flex justify-center gap-4 text-xs font-semibold text-slate-600 bg-slate-50 py-2 rounded-lg">
+                        <span><i class="fa-solid fa-user-group text-accent"></i> 7-14 Pax</span>
+                        <span><i class="fa-solid fa-suitcase text-accent"></i> 8+ Koper</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Coverage Area Meliputi Seluruh Lombok</h2>
+                    <p class="text-slate-400 mb-8 leading-relaxed">Kami melayani penjemputan dan pengantaran ke seluruh pelosok Pulau Lombok. Dari hiruk pikuk kota Mataram, keindahan pantai Kuta Mandalika, hingga kesejukan kaki Gunung Rinjani di Senaru dan Sembalun.</p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-400"></i> Lombok Barat (Senggigi, Mataram, Lembar)</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-400"></i> Lombok Tengah (Bandara, Kuta Mandalika)</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-400"></i> Lombok Utara (Bangsal, Senaru, 3 Gili)</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-400"></i> Lombok Timur (Sembalun, Tetebatu, Pink Beach)</li>
+                    </ul>
+                    <a href="#booking-section" class="inline-block bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-xl font-semibold transition-colors">
+                        Cek Rute Anda
+                    </a>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-700 h-[400px]">
+                    <!-- Simple map iframe representing Lombok -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1009180.7027581534!2d115.71441708892419!3d-8.647585293674643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdcf6783d54021%3A0xc6c4f74950e38053!2sLombok!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-50" id="faq">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Pertanyaan Umum</h2>
+                <div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-5 hover:border-primary transition-colors">
+                    <h4 class="font-bold text-slate-800 flex justify-between items-center cursor-pointer" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        Apakah harga yang tampil final?
+                        <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                    </h4>
+                    <p class="text-slate-600 text-sm mt-3 hidden leading-relaxed">
+                        Harga di kalkulator adalah <strong>estimasi</strong> yang sangat mendekati harga final berdasarkan jarak jalur utama. Harga final dapat dipengaruhi oleh lokasi spesifik hotel (masuk gang/bukit), kebutuhan khusus, atau penjemputan dini hari. Admin akan mengkonfirmasi harga final via WhatsApp.
+                    </p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-5 hover:border-primary transition-colors">
+                    <h4 class="font-bold text-slate-800 flex justify-between items-center cursor-pointer" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        Apakah harga sudah termasuk driver & BBM?
+                        <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                    </h4>
+                    <p class="text-slate-600 text-sm mt-3 hidden leading-relaxed">
+                        Ya, seluruh harga booking point-to-point / transfer sudah termasuk mobil, driver profesional, dan BBM. Belum termasuk biaya parkir, tiket masuk wisata, atau tol (jika ada).
+                    </p>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-5 hover:border-primary transition-colors">
+                    <h4 class="font-bold text-slate-800 flex justify-between items-center cursor-pointer" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        Apakah melayani penjemputan malam hari di Bandara?
+                        <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                    </h4>
+                    <p class="text-slate-600 text-sm mt-3 hidden leading-relaxed">
+                        Ya, kami memonitor jadwal kedatangan pesawat Anda. Terdapat kemungkinan penyesuaian biaya tambahan (night surcharge) untuk penjemputan di atas jam 22.00 WITA.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <a href="#" class="font-bold text-2xl tracking-tight text-white mb-4 block">
+                        LOMBOK<span class="text-primary">RIDE</span>
+                    </a>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                        Platform pemesanan private transport dan airport transfer terpercaya di Pulau Lombok. Aman, nyaman, dan transparan.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Area Utama</h4>
+                    <ul class="text-sm space-y-2">
+                        <li>Bandara Internasional Lombok (BIL)</li>
+                        <li>Mataram & Senggigi</li>
+                        <li>Bangsal (Gili Trawangan transfer)</li>
+                        <li>Kuta Mandalika</li>
+                        <li>Senaru & Sembalun</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Kontak Kami</h4>
+                    <div class="flex items-center gap-3 mb-2 text-sm">
+                        <i class="fa-brands fa-whatsapp text-green-400 text-xl"></i>
+                        <span>0859-5668-4081</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-sm">
+                        <i class="fa-solid fa-envelope text-slate-400 text-xl"></i>
+                        <span>booking@lombokride.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
+                &copy; 2026 Lombok Ride. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Fixed Booking Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-slate-200 p-3 flex gap-3 z-50 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
+        <button onclick="openDirectWhatsApp()" class="flex-none bg-green-500 text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-sm">
+            <i class="fa-brands fa-whatsapp"></i>
+        </button>
+        <a href="#booking-section" class="flex-1 bg-slate-900 text-white rounded-xl flex items-center justify-center font-bold text-sm shadow-sm">
+            BOOKING SEKARANG
+        </a>
+    </div>
+
+    <!-- Desktop Floating WhatsApp -->
+    <button onclick="openDirectWhatsApp()" class="hidden md:flex fixed bottom-8 right-8 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full shadow-float items-center gap-2 z-50 transition-transform hover:scale-105">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span class="font-bold">Booking via WhatsApp</span>
+    </button>
+
+
+    <script>
+        /**
+         * SECTION 1: DATA & CONFIGURATION (data.js equivalent)
+         * Admin dapat merubah harga dasar di sini.
+         */
+        const CONFIG = {
+            whatsapp: "6285956684081",
+            pricing: {
+                economy: { minimumFare: 100000, pricePerKm: 5000 },
+                family:  { minimumFare: 130000, pricePerKm: 6500 },
+                premium: { minimumFare: 180000, pricePerKm: 8500 },
+                van:     { minimumFare: 250000, pricePerKm: 10000 }
+            },
+            speed: {
+                default: 40 // Average speed km/h
+            }
+        };
+
+        // Database Lokasi Lombok
+        const locations = [
+            // Lombok Tengah
+            { id: "airport", name: "Bandara Internasional Lombok", region: "Lombok Tengah", type: "airport" },
+            { id: "kuta", name: "Kuta Lombok / Mandalika", region: "Lombok Tengah" },
+            { id: "tanjung_aan", name: "Pantai Tanjung Aan", region: "Lombok Tengah" },
+            { id: "selong_belanak", name: "Selong Belanak", region: "Lombok Tengah" },
+            { id: "praya", name: "Praya (Pusat Kota)", region: "Lombok Tengah" },
+            { id: "benang_kelambu", name: "Air Terjun Benang Kelambu", region: "Lombok Tengah" },
+            
+            // Lombok Barat & Kota
+            { id: "mataram", name: "Mataram Kota", region: "Lombok Barat" },
+            { id: "senggigi", name: "Senggigi", region: "Lombok Barat" },
+            { id: "lembar", name: "Pelabuhan Lembar", region: "Lombok Barat" },
+            { id: "sekotong", name: "Sekotong", region: "Lombok Barat" },
+            
+            // Lombok Utara
+            { id: "bangsal", name: "Pelabuhan Bangsal (Ke Gili)", region: "Lombok Utara" },
+            { id: "teluk_nare", name: "Teluk Nare", region: "Lombok Utara" },
+            { id: "senaru", name: "Senaru (Kaki Rinjani)", region: "Lombok Utara" },
+            
+            // Lombok Timur
+            { id: "sembalun", name: "Sembalun (Kaki Rinjani)", region: "Lombok Timur" },
+            { id: "tetebatu", name: "Tetebatu", region: "Lombok Timur" },
+            { id: "pink_beach", name: "Pink Beach (Tanjung Ringgit)", region: "Lombok Timur" },
+            { id: "labuhan_lombok", name: "Pelabuhan Kayangan", region: "Lombok Timur" }
+        ].sort((a, b) => a.name.localeCompare(b.name)); // Sort alphabetically
+
+        /* 
+         * Jarak merupakan estimasi jarak jalan raya terdekat dalam KM.
+         * Sistem menggunakan bidirectional fallback, jadi airport_mataram = mataram_airport
+         */
+        const routeDatabase = {
+            // Airport Routes
+            "airport_mataram": 32,
+            "airport_senggigi": 50,
+            "airport_kuta": 18,
+            "airport_tanjung_aan": 22,
+            "airport_selong_belanak": 20,
+            "airport_bangsal": 60,
+            "airport_senaru": 110,
+            "airport_sembalun": 85,
+            "airport_tetebatu": 45,
+            "airport_pink_beach": 56,
+            "airport_lembar": 30,
+            "airport_sekotong": 55,
+
+            // Mataram Routes
+            "mataram_senggigi": 18,
+            "mataram_bangsal": 30,
+            "mataram_senaru": 85,
+            "mataram_sembalun": 90,
+            "mataram_kuta": 50,
+            "mataram_pink_beach": 82,
+            "mataram_lembar": 25,
+            
+            // Senggigi Routes
+            "senggigi_bangsal": 25,
+            "senggigi_senaru": 75,
+            "senggigi_kuta": 65,
+            "senggigi_sembalun": 110,
+
+            // Kuta Routes
+            "kuta_bangsal": 75,
+            "kuta_senaru": 125,
+            "kuta_sembalun": 100,
+            "kuta_pink_beach": 60,
+            
+            // North & East specific
+            "senaru_sembalun": 45, // via pusuk pas sembalun
+            "bangsal_senaru": 50,
+            "bangsal_sembalun": 90
+        };
+
+        // Destinations display data
+        const featuredDestinations = [
+            { id: "mataram", name: "Mataram Kota", img: "https://images.unsplash.com/photo-1555627236-47a32ddadfea?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", desc: "Pusat bisnis, kuliner, dan budaya Lombok." },
+            { id: "senggigi", name: "Senggigi", img: "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", desc: "Kawasan resort pantai ikonik di pesisir barat." },
+            { id: "kuta", name: "Kuta Mandalika", img: "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", desc: "Sirkuit internasional dan pantai pasir merica." },
+            { id: "bangsal", name: "Pelabuhan Bangsal", img: "https://images.unsplash.com/photo-1583216091444-245f3dfd68a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", desc: "Gerbang utama penyeberangan ke 3 Gili." },
+            { id: "senaru", name: "Senaru", img: "https://images.unsplash.com/photo-1618306935705-eb10d0611481?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", desc: "Air terjun Sendang Gile dan jalur pendakian." },
+            { id: "sembalun", name: "Sembalun", img: "https://images.unsplash.com/photo-1510006851064-e6056cd0e3a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", desc: "Lembah indah di dataran tinggi kaki Rinjani." },
+            { id: "pink_beach", name: "Pink Beach", img: "https://images.unsplash.com/photo-1596484552834-6a58f850f0a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", desc: "Pantai unik berpasir merah muda di ujung timur." },
+            { id: "tetebatu", name: "Tetebatu", img: "https://images.unsplash.com/photo-1601058269986-e7e0e774ec26?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", desc: "Hamparan sawah terasering dan udara sejuk." }
+        ];
+
+        /**
+         * SECTION 2: APPLICATION LOGIC (app.js equivalent)
+         */
+        
+        // DOM Elements
+        const elOrigin = document.getElementById('origin');
+        const elDest = document.getElementById('destination');
+        const elDate = document.getElementById('date');
+        const elTime = document.getElementById('time');
+        const elPassengers = document.getElementById('passengers');
+        const elVehicle = document.getElementById('vehicle');
+        
+        // Init logic
+        document.addEventListener('DOMContentLoaded', () => {
+            populateDropdowns();
+            renderDestinations();
+            setDefaultDateTime();
+            
+            // Add event listeners for dynamic recalculation
+            [elOrigin, elDest, elVehicle].forEach(el => {
+                el.addEventListener('change', handleInputChange);
+            });
+        });
+
+        function populateDropdowns() {
+            // Group by region logic for better UX
+            const regions = [...new Set(locations.map(l => l.region))];
+            
+            [elOrigin, elDest].forEach(select => {
+                regions.forEach(region => {
+                    const optgroup = document.createElement('optgroup');
+                    optgroup.label = region;
+                    
+                    locations.filter(l => l.region === region).forEach(loc => {
+                        const option = document.createElement('option');
+                        option.value = loc.id;
+                        option.textContent = loc.name;
+                        optgroup.appendChild(option);
+                    });
+                    
+                    select.appendChild(optgroup);
+                });
+            });
+        }
+
+        function setDefaultDateTime() {
+            const now = new Date();
+            now.setDate(now.getDate() + 1); // Default tomorrow
+            elDate.value = now.toISOString().split('T')[0];
+            elTime.value = "09:00";
+        }
+
+        // Feature: Recommend vehicle based on passengers
+        function recommendVehicle() {
+            const pax = parseInt(elPassengers.value);
+            if (pax >= 7) elVehicle.value = 'van';
+            else if (pax >= 5) elVehicle.value = 'family';
+            
+            // If already showing calc, update it
+            if(document.getElementById('calcResult').classList.contains('show-calc')) {
+                calculate();
+            }
+        }
+
+        function swapLocations() {
+            const temp = elOrigin.value;
+            elOrigin.value = elDest.value;
+            elDest.value = temp;
+            
+            // Animate Icon
+            const icon = document.getElementById('swapIcon');
+            icon.classList.remove('swap-spin');
+            void icon.offsetWidth; // trigger reflow
+            icon.classList.add('swap-spin');
+
+            if (elOrigin.value && elDest.value) calculate();
+        }
+
+        /**
+         * PRICING ENGINE
+         */
+        function getRouteKey(id1, id2) {
+            // Ensure alphabetical order for bidirectional matching
+            return [id1, id2].sort().join('_');
+        }
+
+        function getDistance(originId, destId) {
+            if (originId === destId) return 0;
+            const key = getRouteKey(originId, destId);
+            return routeDatabase[key] || null; // Returns null if exact route not in DB
+        }
+
+        function handleInputChange() {
+            // Only hide result if they change core locations, keeping flow smooth
+            document.getElementById('calcResult').classList.replace('show-calc', 'hidden-calc');
+            document.getElementById('submitBtn').classList.add('hidden-calc');
+            document.getElementById('checkPriceBtn').classList.remove('hidden-calc');
+            document.getElementById('extraDetails').classList.add('hidden-calc');
+            document.getElementById('errorState').classList.add('hidden-calc');
+        }
+
+        function calculate() {
+            const originId = elOrigin.value;
+            const destId = elDest.value;
+            const vehicle = elVehicle.value;
+
+            const errorBox = document.getElementById('errorState');
+            const errorMsg = document.getElementById('errorMsg');
+            const calcResult = document.getElementById('calcResult');
+            const checkBtn = document.getElementById('checkPriceBtn');
+            const submitBtn = document.getElementById('submitBtn');
+            const extraDetails = document.getElementById('extraDetails');
+
+            // Reset UI
+            errorBox.classList.add('hidden-calc');
+            calcResult.classList.replace('show-calc', 'hidden-calc');
+
+            if (!originId || !destId) {
+                errorMsg.innerHTML = "Silakan pilih lokasi jemput dan tujuan terlebih dahulu.";
+                errorBox.classList.remove('hidden-calc');
+                return;
+            }
+
+            if (originId === destId) {
+                errorMsg.innerHTML = "Lokasi penjemputan dan tujuan tidak boleh sama.";
+                errorBox.classList.remove('hidden-calc');
+                return;
+            }
+
+            const distance = getDistance(originId, destId);
+
+            if (!distance) {
+                // Fallback state if route is totally unknown
+                errorMsg.innerHTML = "Rute ini belum memiliki data jarak presisi. Harga akan dikalkulasi manual oleh Admin. Lanjutkan untuk booking via WhatsApp.";
+                errorBox.classList.remove('hidden-calc');
+                
+                // Still show form to proceed
+                checkBtn.classList.add('hidden-calc');
+                submitBtn.classList.remove('hidden-calc');
+                extraDetails.classList.remove('hidden-calc');
+                
+                // store fallback data
+                window.currentCalc = { valid: false, originId, destId, vehicle };
+                return;
+            }
+
+            // Engine calculation
+            const config = CONFIG.pricing[vehicle];
+            let rawPrice = distance * config.pricePerKm;
+            
+            // Check minimum fare
+            rawPrice = Math.max(config.minimumFare, rawPrice);
+            
+            // Round up to nearest 5000 (Sistem Rounding)
+            const finalPrice = Math.ceil(rawPrice / 5000) * 5000;
+
+            // Duration calculation (add 15% buffer for traffic)
+            const timeInHours = distance / CONFIG.speed.default;
+            const totalMinutes = Math.ceil(timeInHours * 60 * 1.15);
+            const hours = Math.floor(totalMinutes / 60);
+            const minutes = totalMinutes % 60;
+            const durationStr = hours > 0 ? `${hours} jam ${minutes} mnt` : `${minutes} mnt`;
+
+            // Update UI
+            document.getElementById('priceResult').innerText = formatCurrency(finalPrice);
+            document.getElementById('distanceResult').innerHTML = `<i class="fa-solid fa-route"></i> Est. ${distance} km`;
+            document.getElementById('durationResult').innerHTML = `<i class="fa-solid fa-clock"></i> Est. ${durationStr}`;
+            
+            calcResult.classList.replace('hidden-calc', 'show-calc');
+            checkBtn.classList.add('hidden-calc');
+            submitBtn.classList.remove('hidden-calc');
+            extraDetails.classList.remove('hidden-calc');
+
+            // Store state for submission
+            const originName = locations.find(l=>l.id===originId).name;
+            const destName = locations.find(l=>l.id===destId).name;
+            const vehicleName = elVehicle.options[elVehicle.selectedIndex].text;
+
+            window.currentCalc = {
+                valid: true,
+                originName,
+                destName,
+                distance,
+                durationStr,
+                finalPrice,
+                vehicleName
+            };
+        }
+
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(amount);
+        }
+
+        function submitBooking() {
+            // Form validation
+            if(!elDate.value || !elTime.value) return;
+            
+            const customerName = document.getElementById('customerName').value;
+            const hotelName = document.getElementById('hotelName').value;
+            const pax = elPassengers.options[elPassengers.selectedIndex].text;
+
+            if(!customerName || !hotelName) {
+                alert("Mohon isi Nama dan detail Hotel/Penerbangan.");
+                return;
+            }
+
+            let message = "";
+            
+            if(window.currentCalc && window.currentCalc.valid) {
+                const c = window.currentCalc;
+                message = `Halo *Lombok Ride*, 
+Saya ingin memesan transportasi:
+
+👤 Nama: ${customerName}
+📅 Tanggal: ${elDate.value}
+⏰ Jam: ${elTime.value}
+📍 Jemput: ${c.originName}
+🏁 Tujuan: ${c.destName}
+🏨 Detail Lokasi/Flight: ${hotelName}
+👥 Penumpang: ${pax}
+🚘 Kendaraan: ${c.vehicleName}
+
+🗺️ Estimasi Jarak: ${c.distance} km
+⏱️ Estimasi Waktu: ${c.durationStr}
+💰 *Estimasi Harga: ${formatCurrency(c.finalPrice)}*
+
+Mohon konfirmasi ketersediaan driver dan harga final. Terima kasih!`;
+            } else {
+                // Fallback message
+                const o = locations.find(l=>l.id===elOrigin.value)?.name || elOrigin.value;
+                const d = locations.find(l=>l.id===elDest.value)?.name || elDest.value;
+                const v = elVehicle.options[elVehicle.selectedIndex].text;
+                
+                message = `Halo *Lombok Ride*, 
+Saya ingin mengecek harga dan memesan transportasi:
+
+👤 Nama: ${customerName}
+📅 Tanggal: ${elDate.value}
+⏰ Jam: ${elTime.value}
+📍 Jemput: ${o}
+🏁 Tujuan: ${d}
+🏨 Detail Lokasi/Flight: ${hotelName}
+👥 Penumpang: ${pax}
+🚘 Kendaraan: ${v}
+
+Terdapat rute khusus. Mohon info ketersediaan dan harganya. Terima kasih!`;
+            }
+
+            openWhatsApp(message);
+        }
+
+        function openWhatsApp(msg) {
+            const url = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
+            window.open(url, "_blank");
+        }
+
+        function openDirectWhatsApp() {
+            const msg = "Halo Lombok Ride, saya ingin bertanya tentang layanan transportasi/sewa mobil.";
+            openWhatsApp(msg);
+        }
+
+        // Render Destinations dynamically
+        function renderDestinations() {
+            const container = document.getElementById('destGrid');
+            let html = '';
+            
+            featuredDestinations.forEach(dest => {
+                html += `
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-float border border-slate-100 transition-all duration-300 group">
+                    <div class="h-40 overflow-hidden relative">
+                        <img src="${dest.img}" alt="${dest.name}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                        <h3 class="absolute bottom-3 left-4 text-white font-bold text-lg">${dest.name}</h3>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-slate-500 text-xs mb-4 line-clamp-2 h-8">${dest.desc}</p>
+                        <button onclick="bookToDestination('${dest.id}')" class="w-full py-2 bg-slate-50 hover:bg-primary text-slate-700 hover:text-white rounded-xl text-sm font-semibold transition-colors border border-slate-200 hover:border-primary">
+                            Ke Sini
+                        </button>
+                    </div>
+                </div>`;
+            });
+            container.innerHTML = html;
+        }
+
+        function bookToDestination(destId) {
+            elDest.value = destId;
+            scrollToTop();
+            // Automatically set origin to airport if it's empty
+            if(!elOrigin.value) elOrigin.value = 'airport';
+            
+            if(elOrigin.value !== destId) {
+                calculate();
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Highlight calculator briefly
+            const form = document.getElementById('bookingForm');
+            form.classList.add('ring-4', 'ring-primary/50');
+            setTimeout(() => form.classList.remove('ring-4', 'ring-primary/50'), 1500);
+        }
+    </script>
+</body>
+</html>
